@@ -2,7 +2,7 @@
 This tutorial shows you how to implement a global search input inside the navigation bar of APEX UT theme.
 All steps doesn´t require you to change theme templates or the theme JS/CSS files itself, thus you don´t lose your current theme subscription and stay update save...
 
-The steps includes this todo´s:
+The steps includes these todo´s:
 - create a placeholder navigation bar entry
 - create a region and text item on global page (page 0)
 - create a "onload" DA on global page (moving the item to navbar and adding some nice animations)
@@ -160,7 +160,7 @@ BEGIN
   l_url := apex_page.get_url(p_application => :app_id,
                              p_page        => '100', -- your search result page
                              p_clear_cache => '100', -- clear cache search result page
-                             p_items       => 'P200_SEARCH', -- target page search item
+                             p_items       => 'P100_SEARCH', -- target page search item
                              p_values      => REPLACE(:p0_search,
                                                       ',',
                                                       '')); -- our page 0 search item without comma
