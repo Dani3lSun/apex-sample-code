@@ -26,7 +26,7 @@ Target type: URL
 URL Target: javascript:$('#P0_SEARCH').focus();
 ```
 
-![](https://github.com/Dani3lSun/apex-sample-code/ut-navbar-search/images/blob/master/navbar_entry.png)
+![](https://github.com/Dani3lSun/apex-sample-code/master/ut-navbar-search/images/navbar_entry.png)
 
 ####Explanation
 These settings add a new navbar list entry with a search icon and a blank label which sets the focus on click on our input item we create in step 2. The custom class "navbar-search" is also required later to move the item using javascript to this position.
@@ -49,7 +49,7 @@ Submit when Enter pressed: Yes
 Width: 30 characters
 ```
 
-![](https://github.com/Dani3lSun/apex-sample-code/ut-navbar-search/images/blob/master/p0_region_item.png)
+![](https://github.com/Dani3lSun/apex-sample-code/master/ut-navbar-search/images/p0_region_item.png)
 
 ####Explanation
 These settings add a new blank region with a position usually not visible on other pages. The region includes our text field which we move to navbar in the next step.
@@ -103,7 +103,7 @@ $('#P0_SEARCH').focusout(function() {
 });
 ```
 
-![](https://github.com/Dani3lSun/apex-sample-code/ut-navbar-search/images/blob/master/p0_onload_da.png)
+![](https://github.com/Dani3lSun/apex-sample-code/master/ut-navbar-search/images/p0_onload_da.png)
 
 ####Explanation
 This javascript code moves the item from our blank region to the navigation bar (appends item to our custom css class) and creates some nice animations for fading out and back in...
@@ -168,7 +168,7 @@ BEGIN
 END;
 ```
 
-![](https://github.com/Dani3lSun/apex-sample-code/ut-navbar-search/images/blob/master/app_process.png)
+![](https://github.com/Dani3lSun/apex-sample-code/master/ut-navbar-search/images/app_process.png)
 
 ####Explanation
 This Application Process gets executed if we submit our P0_SEARCH item (enter pressed) and redirects to another page (for example a search result page) and sets a item on target page.
@@ -197,12 +197,12 @@ setTimeout(function(){
 },200);
 ```
 
-![](https://github.com/Dani3lSun/apex-sample-code/ut-navbar-search/images/blob/master/p0_keypress_da.png)
+![](https://github.com/Dani3lSun/apex-sample-code/master/ut-navbar-search/images/p0_keypress_da.png)
 
 ####Explanation
 This DA adds a loading spinner to the page until target page is up. On touch devices the soft keyboard will fade out...
 
 
 ##Preview
-![](https://github.com/Dani3lSun/apex-sample-code/ut-navbar-search/images/blob/master/preview.gif)
+![](https://github.com/Dani3lSun/apex-sample-code/master/ut-navbar-search/images/preview.gif)
 ---
