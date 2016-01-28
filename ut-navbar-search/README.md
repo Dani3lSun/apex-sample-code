@@ -12,7 +12,10 @@ The steps includes this todo´s:
 
 
 ##Changelog
+####1.1 - solved IE and Firefox Navbar link issues
+
 ####1.0 - Initial Release
+
 
 
 ##1) Create a placeholder navigation bar entry
@@ -23,7 +26,7 @@ Sequence: 1
 Image/Class: fa-search navbar-search
 List Entry Label: &nbsp;
 Target type: URL
-URL Target: javascript:$('#P0_SEARCH').focus();
+URL Target: javascript:document.getElementById('P0_SEARCH').focus();
 ```
 
 ![](https://raw.githubusercontent.com/Dani3lSun/apex-sample-code/master/ut-navbar-search/images/navbar_entry.png)
