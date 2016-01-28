@@ -18,7 +18,7 @@ The steps includes this todo´s:
 
 
 
-##1) Create a placeholder navigation bar entry
+##1 - Create a placeholder navigation bar entry
 Go to your Application --> Shared Components --> Navigation Bar list --> "Desktop Navigation Bar" and create a new list entry. For best looking results choose the smallest display sequence so the list entry stays on the left side.
 
 ```
@@ -35,7 +35,7 @@ URL Target: javascript:document.getElementById('P0_SEARCH').focus();
 These settings add a new navbar list entry with a search icon and a blank label which sets the focus on click on our input item we create in step 2. The custom class "navbar-search" is also required later to move the item using javascript to this position.
 
 
-##2) Create a region and text item on global page (page 0)
+##2 - Create a region and text item on global page (page 0)
 Go to your global page (usually page 0) and create a new region and a text field. Choose a position there other regions are not disrupted...
 ```
 Region:
@@ -58,7 +58,7 @@ Width: 30 characters
 These settings add a new blank region with a position usually not visible on other pages. The region includes our text field which we move to navbar in the next step.
 
 
-##3) Create a "onload" DA on global page (moving the item to navbar and adding some nice animations)
+##3 - Create a "onload" DA on global page (moving the item to navbar and adding some nice animations)
 Go to your global page (usually page 0) and create a new Dynamic Action (page load) using the code below:
 
 ```
@@ -112,7 +112,7 @@ $('#P0_SEARCH').focusout(function() {
 This javascript code moves the item from our blank region to the navigation bar (appends item to our custom css class) and creates some nice animations for fading out and back in...
 
 
-##4) Add some CSS to UT theme roller
+##4 - Add some CSS to UT theme roller
 Run your application and open UT Theme Roller from developer bar. Under Custom CSS part add this:
 
 ```
@@ -139,7 +139,7 @@ Run your application and open UT Theme Roller from developer bar. Under Custom C
 This CSS adds some default style to our input item and navigation bar. If you don´t like it or you already customized your UT theme, change the styles so that fits best into your application.
 
 
-##5) Create a application process for redirecting to other pages (global page branch)
+##5 - Create a application process for redirecting to other pages (global page branch)
 Go to Your Application --> Shared Components --> Application Processes --> Create
 
 ```
@@ -177,7 +177,7 @@ END;
 This Application Process gets executed if we submit our P0_SEARCH item (enter pressed) and redirects to another page (for example a search result page) and sets a item on target page.
 
 
-##Optional: Create a DA on global page for a loading spinner if enter key gets pressed
+##6 - Optional: Create a DA on global page for a loading spinner if enter key gets pressed
 Go to your global page (usually page 0) and create a new Dynamic Action using the code below:
 
 ```
