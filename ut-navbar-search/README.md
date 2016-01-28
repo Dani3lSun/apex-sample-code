@@ -123,6 +123,7 @@ Run your application and open UT Theme Roller from developer bar. Under Custom C
   border-radius: 3px !important;
   background-color: transparent;
   color: #fff;
+  outline-width: 0;
   margin-top: -6px;
   margin-bottom: -4px;
   margin-left: 5px;
