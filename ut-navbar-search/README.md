@@ -167,8 +167,7 @@ BEGIN
                                                       '')); -- our page 0 search item without comma
   htp.init;
   -- redirect
-  owa_util.redirect_url(l_url);
-  apex_application.stop_apex_engine;
+  apex_util.redirect_url(l_url);
 END;
 ```
 
